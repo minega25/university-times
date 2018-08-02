@@ -1,0 +1,70 @@
+.scrollToTop, .pagination_area ul li a:hover{
+    background-color:orangered; 
+    color:#fff}
+.scrollToTop:hover, .scrollToTop:focus, .pagination_area ul li a{
+    background-color:#fff; 
+    color:orangered; 
+    border-color:1px solid }
+.top_menu_dropdown ul li a:hover {
+    float: left;
+    color: orangered;
+    list-style-type: none;
+    cursor: pointer;
+    font-family:"Oswald",sans-serif; 
+    font-size:12px; 
+    padding:8px 12px; 
+    text-transform:uppercase; 
+}
+.top_nav li a:hover{
+    color:orangered}
+.search_form input[type="submit"]:hover{
+    background-color:a}
+.navbar-default{
+    background-color:orangered; 
+    border-color:orangered}
+.custom_nav li a:hover{
+    border-color:white}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{background-color:#fff; color:orangered; border-color:darkgrey;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{background-color:#fff; color:orangered; border-color:#FFAE00}
+.navbar-nav > li > .dropdown-menu{margin-top:1px; background-color:orangered}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus{background-color:#fff; color:orangered; border-color:#FFAE00; padding-left:20px}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a{color:#fff}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color:darkgrey;}
+.slick-prev, .slick-next{background-color:orangered}
+.slick-prev:hover, .slick-next:hover{opacity:0.80}
+.bold_line span{background-color:orangered}
+.catg1_nav li .post_titile a:hover{color:orangered}
+.content_middle_middle:after{background-color:orangered}
+.content_middle_middle:before{background-color:orangered}
+.single_featuorangered_slide > h2 a:hover{color:orangered}
+.catg_titile a:hover{color:orangered}
+span.meta_date:hover, span.meta_comment:hover, span.meta_more:hover, span.meta_comment a:hover, span.meta_more a:hover{color:orangered}
+.media-heading a:hover{color:orangered}
+.single_bottom_rightbar > h2{border-bottom:3px solid orangered}
+.nav-tabs{border-bottom:1px solid orangered}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus{color:orangered}
+.nav-tabs > li.active > a:hover{color:orangered !important}
+.nav-tabs > li > a:hover{background-color:orangered; color:#fff !important}
+.single_bottom_rightbar ul li > a:hover{color:orangered}
+.labels_nav li a:hover{background-color:orangered}
+.breadcrumb{background-color:orangered; border:2px solid orangered}
+.single_page_area > h2{border-left:5px solid orangered}
+.post_commentbox a:hover, .post_commentbox span:hover{color:orangered}
+.single_page_content blockquote{border-color:#eee orangered; border-left:5px solid orangered}
+.single_page_content ul li:before{background:none repeat scroll 0 0 orangered}
+.post_pagination{border-bottom:2px solid orangered; border-top:2px solid orangered}
+.prev{border-right:2px solid orangered}
+.angle_left{background-color:orangered}
+.angle_right{background-color:orangered}
+.error_page_content h1:after, .error_page_content h1:before{border:2px solid orangered}
+.error_page_content p{border-bottom:2px solid orangered; border-top:2px solid orangered}
+.error_page_content p:after{border-top:1px solid orangered}
+.error_page_content p:before{border-top:1px solid orangered}
+.error_page_content p > a:hover{color:orangered}
+.our_office{border-top:2px solid orangered}
+.contact_us{border-top:2px solid orangered}
+.contact_form input[type="submit"]:hover{background-color:orangered; color:#fff; border-color:orangered}
+.our_office:before{border-bottom:1px solid orangered}
+.contact_us:before{border-bottom:1px solid orangered}
+.single_footer_top > h2{color:orangered}
+.similar_post h2 i{color:orangered}
