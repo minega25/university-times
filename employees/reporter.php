@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <title>registration form</title>
@@ -31,7 +30,7 @@
   <h2 class="" style="text-align: center; padding: 30px 30px; top: 10px; " ><u>story submit form</u></h2>
   <section class="panel panel-primary">
   <div class="row">
-	<form class="form-horizontal panel-body"  action="reporter.php" method="post"id="uniform">
+	<form class="form-horizontal panel-body"  action="reporter.php" method="post"id="uniform"  enctype="multipart/form-data">
 	<div class="form-group">
 			<label for="name" class="control-label col-lg-2">enter name:</label>
 			<div class="col-lg-6"><input type="text" class="form-control" name="name" id="name" placeholder="enter your name" required /></div>
@@ -97,16 +96,19 @@
 <?php
  include 'includes/connect.php';
  if(isset($_POST["name"])){
- $name = $_POST['name'];
- $time = date('m-d-y');
- $cat = $_POST['cat'];
- $title = $_POST['title'];
- $university = $_POST['university'];
- $image = $_FILES['image']['name'];
- $story = $_POST['story'];
- $image_tmp = $_FILES['image']['tmp_name'];
- 
- move_uploaded_file($image_tmp,"new_images/$image");
+	 
+	$name = $_POST['name'];
+	$time = date('h:i:sa');
+	$cat = $_POST['cat'];
+	$story = $_POST['story'];
+	$title = $_POST['title'];
+	$university = $_POST['university'];
+	$target_dir = "new_images/";
+	$target_file = $target_dir.basename($_FILES['image']['name']);
+	$image = $_FILES['image']['name'];
+	$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+	move_uploaded_file($_FILES["image"]["tmp_name"], $target_file) ;
+
  $sql = "INSERT INTO reporter (category_id,name,university,title,image,story,post_time)VALUES('$cat','$name','$university','$title','$image','$story','$time')";
  $sql_run= mysql_query($sql);
  echo "<script>alert('post successfully submited !')</script>";

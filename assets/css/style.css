@@ -4,6 +4,7 @@
     font-style:normal; 
     font-weight:400; 
     src:local('Oswald Regular'),local('Oswald-Regular'),url("../fonts/Oswald-Regular-400.woff") format('woff')}
+
 body{
     background-color:#fff; 
     color:#333; 
@@ -85,18 +86,44 @@ p{ font-family: times new roman !important; }
     display: inline-block;
      border-bottom:1px solid #e6e6e6; 
 }
-.social_media {
-	position: fixed;
-	top: 20%;
+
+.social-icons {
+	  top: 40%;
 }
-.social_media > ul > li > a >img:hover{
-		opacity: black;
-		-moz-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-         -o-transform: scale(1.02);
-            transform: scale(1.02);}
-.social_media ul > li{
-	list-style-type: none;
+.social-icons a {
+  font-size: 30px;
+  padding-bottom:20px;  
+  padding-left:30px; 
+}
+.social-icons .fa-facebook{
+  color: black;
+}
+
+.social-icons .fa-twitter {
+  color:black;
+}
+
+.social-icons .fa-google-plus {
+  color:black;
+}
+
+.social-icons .fa-youtube{
+  color: black;
+}
+.social-icons .fa-facebook:hover{
+  color: #3B5997
+}
+
+.social-icons .fa-twitter:hover {
+  color:#29C5F6
+}
+
+.social-icons .fa-google-plus:hover {
+  color:#D13D2F
+}
+
+.social-icons .fa-youtube:hover{
+  color: #ec5538
 }
 .top_menu_dropdown ul li a {
     float: left;
@@ -311,33 +338,7 @@ p{ font-family: times new roman !important; }
 .login_class{
 	font-size: 20px;
 }
-.search_area{
-	z-index: 170;
-	display: none;
-}
-.search_area > form{
-	z-index: 150;	
-}
-.search_area  form  input[type="submit"]:hover{
-	background-color: orangered;
-	color: white;
-}
 
-.search_bckground{
-	position: fixed;
-    background-color: black;
-    opacity: .7;
-    width: 100%;
-    height: 100%;
-    z-index: 150;
-}
-.search_close{
-	border-radius: 20px ;
-	float: right;
-	border: 5px solid black; 
-	opacity: .9;
-	z-index: 150
-}
 #status{
     width:200px; 
     height:200px; 
@@ -372,6 +373,9 @@ p{ font-family: times new roman !important; }
     width:100%}
 .nav_area_custom{
     margin-right: -13.5px;
+}
+#payload{
+	top: 2px;
 }
 .navbar-default{ 
     border-radius:0; 
@@ -482,9 +486,58 @@ padding-left:10px}
     margin-right:10px; 
     position:relative; 
     width:48%}
+.latest_post{float:left;
+display:inline;
+width:100%}
+.latest_post > h2{background:none repeat scroll 0 0 orangered;
+color:#fff; 
+font-family:'Oswald',sans-serif; 
+font-size:18px;
+margin-top:5px; 
+font-weight:400; 
+margin-bottom:10px; 
+margin-left:0; 
+padding:0; 
+position:relative;
+text-align:center; 
+text-transform:uppercase}
+.latest_post > h2 span{padding:4px 10px}
+.latest_postnav{height:auto !important;
+margin-top:20px}
+.latest_postnav li{margin-bottom:10px;
+float:left;
+width:100%}
+.catg_title{
+font-family:'Oswald',sans-serif;
+font-size: 15px; 
+}  
+  .latest_post_container{display:inline; 
+float:left; 
+height:500px;
+overflow: hidden;
+ position:relative;
+  width:100%}
+.latest_post_container:hover #prev-button, .latest_post_container:hover #next-button{display:block}
+#prev-button{cursor:pointer;
+ font-size:20px;
+ left:0;
+ position:absolute;
+ text-align:center;
+ top:-10px;
+width:100%;
+ display:none}
+#next-button{
+cursor:pointer;
+display:none;
+font-size:20px;
+left:0;
+position:absolute; 
+text-align:center; 
+ bottom:0;
+width:100%}
 .featured_nav li img{
-    width:100%; 
-    height:100%}
+width:100%; 
+height:100%}
 .featured_nav li:hover .title_caption{
     height:130px; 
     padding-top:15%}
@@ -638,9 +691,7 @@ padding-left:10px}
     -o-transition:all 0.5s; 
     -moz-transition:all 0.5s; 
     transition:all 0.5s}
-.single_featured_slide > p{
-    font-size:20px; 
-    padding:0px 16px}
+
 .content_middle_middle .slick-prev{
     left:15px; 
     top:25px}
@@ -980,16 +1031,50 @@ padding:6px 0;
     float:left; 
     display:inline; 
     width:100%}
+.comment_views{
+	background-color:#fff; 
+    display:inline-block; 
+    float:left; 
+    margin-bottom:20px; 
+    padding:0 15px; 
+	width:100%;
+	border-radius: 3px
+}
+.comment{
+	display: inline-block;
+	font-size: 18px;
+	font-family: verdana;
+	
+}
+.comment_none > h4{
+	display: inline-block;
+	font-size: 18px;
+	font-family: "Oswald";
+}
+.comment_section h3{
+	font-family: "Oswald";
+}
+.comment_insert{
+	background-color:#fff; 
+    display:inline-block; 
+    float:left; 
+    margin-bottom:20px; 
+    padding:0 15px; 
+	width:100%;
+	border-radius: 3px
+
+}
+
 .post_commentbox{
     border-bottom:1px dotted #dedede; 
     display:inline; 
-    float:left; 
-    margin-bottom:30px;
-     padding-bottom:2px; 
-     padding-left:5px; 
-     width:100%}
+    float:left;
+    padding-bottom:2px; 
+    padding-left:5px; 
+    width:100%}
 .post_commentbox a{
     margin-right:5px; 
+	font-family: "Oswald";
     font-size:11px}
 .post_commentbox a > i{
     color:#798992;
@@ -997,6 +1082,7 @@ padding:6px 0;
      margin-right:5px}
 .post_commentbox span > i{
     margin-right:5px}
+
 .single_page_content img{
     margin-bottom:10px; 
     margin-top:20px; 
@@ -1113,8 +1199,8 @@ padding:6px 0;
     background-color:#007BB5}
 .linkedin i{
     background-color:#346DA6}
-.stumbleupon{
-    background-color:#EF4E23}
+.whatsapp{
+    background-color: limegreen}
 .stumbleupon i{
     background-color:#CA4638}
 .pinterest{
@@ -1138,6 +1224,7 @@ padding:6px 0;
     margin-bottom:20px; 
     padding:0 15px; 
     width:100%}
+
 .similar_post h2{
     border-bottom:1px dotted #798992; 
     font-size:25px;
@@ -1215,18 +1302,18 @@ position:relative;
 vertical-align:middle; 
 color:red}
 .error_page_content h1:after, .error_page_content h1:before{
-    background:none repeat scroll 0 0 #fff; 
-    content:"";
-     height:20px; 
-     margin-top:-10px; 
-     position:absolute; 
-     top:50%; 
-     -webkit-transform:rotate(45deg); 
-     -mz-transform:rotate(45deg); 
-     -ms-transform:rotate(45deg); 
-     -o-transform:rotate(45deg); 
-     transform:rotate(45deg); 
-     width:20px}
+background:none repeat scroll 0 0 #fff; 
+content:"";
+height:20px; 
+ margin-top:-10px; 
+position:absolute; 
+ top:50%; 
+-webkit-transform:rotate(45deg); 
+-mz-transform:rotate(45deg); 
+ -ms-transform:rotate(45deg); 
+-o-transform:rotate(45deg); 
+transform:rotate(45deg); 
+width:20px}
 .error_page_content h1:after{
     right:-60px}
 .error_page_content h1:before{
@@ -1328,6 +1415,12 @@ color:red}
     -ms-transition:all 0.5s; 
     -o-transition:all 0.5s; 
     transition:all 0.5s}
+.admin_sidebar ul li{
+	 text-transform:uppercase; 
+	 font-size: 30px;
+	 
+}
+
 @media(max-width:1199px )
 {.header_bottom_left{width:210px} 
 .logo{width:210px} 
@@ -1337,6 +1430,7 @@ color:red}
 .pagincontent{width:82%}}
 @media(max-width:991px )
 {.header_bottom_left{width:100%} 
+latest_post_container{height:380px;overflow:hidden}#next-button{bottom:-2px}
 .header_bottom_right{display:none} 
 .featured_nav li{margin-left:10px; margin-right:0px; height:208px} 
 .login_form{width: 100%}
@@ -1372,8 +1466,8 @@ color:red}
     .angle_right{width:13%} 
     .angle_left{width:13%} 
     .error_page_content h1{font-size:170px}}
-@media(max-width:480px )
-{.header_top_left{width:100%} 
+@media(max-width:480px ){
+    .header_top_left{width:100%} 
     .top_nav{text-align:center} 
 	.login_form{width: 100% ;top: 0px}
 	.btn_custom > ul >li >a{font-size: 13px;}
@@ -1393,17 +1487,16 @@ color:red}
     .pagincontent > a{font-size:13px} 
     .single_page_area > h2{font-size:20px; line-height:30px; padding:10px} 
     .breadcrumb li a{font-size:12px}
-	.social_media{display: none;}
-
+	.social-icons{display: none;}
     .breadcrumb > .active{font-size:12px} 
-    .error_page_content h1{font-size:100px}}
+    .error_page_content h1{font-size:100px}
 	.btn_custom > ul {margin-left: 0px; }
+}
 @media(max-width:360px )
 {.catgimg_container{height:150px} 
-.social_media{display: none;}
+.social-icons{display: none;}
 .slider_tittle{font-size: 14px;}
 .btn_custom > ul >li >a{font-size: 10px; margin-left: 0px}
-
 .media-left{width:112px; height:150px} 
 .login_form{top: 0px;}
 .flicker_nav li a{height:60px} 
